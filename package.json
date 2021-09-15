@@ -5,6 +5,9 @@
   "repository": "https://github.com/bhagyasah/node_adv.git",
   "author": "bhagyasah <bhagyasah4u@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "nodemon ./modules/cluster/index.js"
+  },
   "dependencies": {
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
