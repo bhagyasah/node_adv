@@ -1,0 +1,460 @@
+
+{
+  "header": {
+    "reportVersion": 2,
+    "event": "JavaScript API",
+    "trigger": "API",
+    "filename": "report.json",
+    "dumpEventTime": "2021-09-27T11:15:50Z",
+    "dumpEventTimeStamp": "1632720650938",
+    "processId": 18138,
+    "threadId": 0,
+    "cwd": "/home/bhagya/workspace/advance-node-concept/modules/report",
+    "commandLine": [
+      "node",
+      "index.js"
+    ],
+    "nodejsVersion": "v14.14.0",
+    "glibcVersionRuntime": "2.31",
+    "glibcVersionCompiler": "2.17",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "linux",
+    "componentVersions": {
+      "node": "14.14.0",
+      "v8": "8.4.371.19-node.17",
+      "uv": "1.40.0",
+      "zlib": "1.2.11",
+      "brotli": "1.0.9",
+      "ares": "1.16.1",
+      "modules": "83",
+      "nghttp2": "1.41.0",
+      "napi": "7",
+      "llhttp": "2.1.3",
+      "openssl": "1.1.1g",
+      "cldr": "37.0",
+      "icu": "67.1",
+      "tz": "2020a",
+      "unicode": "13.0"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v14.14.0/node-v14.14.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v14.14.0/node-v14.14.0.tar.gz"
+    },
+    "osName": "Linux",
+    "osRelease": "5.11.0-36-generic",
+    "osVersion": "#40~20.04.1-Ubuntu SMP Sat Sep 18 02:14:19 UTC 2021",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i5-6200U CPU @ 2.30GHz",
+        "speed": 2400,
+        "user": 1531660,
+        "nice": 6020,
+        "sys": 558160,
+        "idle": 6183910,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-6200U CPU @ 2.30GHz",
+        "speed": 2400,
+        "user": 1595060,
+        "nice": 7920,
+        "sys": 492620,
+        "idle": 6200570,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-6200U CPU @ 2.30GHz",
+        "speed": 2400,
+        "user": 1572690,
+        "nice": 6440,
+        "sys": 489060,
+        "idle": 6230100,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-6200U CPU @ 2.30GHz",
+        "speed": 2700,
+        "user": 1597600,
+        "nice": 10720,
+        "sys": 510500,
+        "idle": 6136820,
+        "irq": 0
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "lo",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "wlp3s0",
+        "internal": false,
+        "mac": "10:02:b5:55:91:9b",
+        "address": "192.168.1.66",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "docker_gwbridge",
+        "internal": false,
+        "mac": "02:42:ef:29:35:9f",
+        "address": "172.24.0.1",
+        "netmask": "255.255.0.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "lo",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "wlp3s0",
+        "internal": false,
+        "mac": "10:02:b5:55:91:9b",
+        "address": "fe80::8310:8c3d:7bbf:9fc8",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 3
+      },
+      {
+        "name": "docker_gwbridge",
+        "internal": false,
+        "mac": "02:42:ef:29:35:9f",
+        "address": "fe80::42:efff:fe29:359f",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 22
+      },
+      {
+        "name": "vethf3cb4f6",
+        "internal": false,
+        "mac": "f2:34:da:7f:19:59",
+        "address": "fe80::f034:daff:fe7f:1959",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 28
+      }
+    ],
+    "host": "bhagya"
+  },
+  "javascriptStack": {
+    "message": "Error: ENOENT: no such file or directory, chdir '/home/bhagya/workspace/advance-node-concept/modules/report' -> '/non-existent-path-not-found-1'",
+    "stack": [
+      "at process.wrappedChdir [as chdir] (internal/bootstrap/switches/does_own_process_state.js:115:14)",
+      "at Object.<anonymous> (/home/bhagya/workspace/advance-node-concept/modules/report/index.js:2:11)",
+      "at Module._compile (internal/modules/cjs/loader.js:1063:30)",
+      "at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+      "at Module.load (internal/modules/cjs/loader.js:928:32)",
+      "at Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+      "at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)"
+    ],
+    "errorProperties": {
+      "errno": "-2",
+      "code": "ENOENT",
+      "syscall": "chdir",
+      "path": "/home/bhagya/workspace/advance-node-concept/modules/report",
+      "dest": "/non-existent-path-not-found-1"
+    }
+  },
+  "nativeStack": [
+    {
+      "pc": "0x0000000000a85a64",
+      "symbol": "report::TriggerNodeReport(v8::Isolate*, node::Environment*, char const*, char const*, std::string const&, v8::Local<v8::Object>) [node]"
+    },
+    {
+      "pc": "0x0000000000a88a24",
+      "symbol": "report::WriteReport(v8::FunctionCallbackInfo<v8::Value> const&) [node]"
+    },
+    {
+      "pc": "0x0000000000be359b",
+      "symbol": " [node]"
+    },
+    {
+      "pc": "0x0000000000be4b46",
+      "symbol": " [node]"
+    },
+    {
+      "pc": "0x0000000000be51c6",
+      "symbol": "v8::internal::Builtin_HandleApiCall(int, unsigned long*, v8::internal::Isolate*) [node]"
+    },
+    {
+      "pc": "0x00000000013ff159",
+      "symbol": " [node]"
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 4333568,
+    "totalCommittedMemory": 3466136,
+    "usedMemory": 2437288,
+    "availableMemory": 2194822720,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 151552,
+        "committedMemory": 150680,
+        "capacity": 150392,
+        "used": 150392,
+        "available": 0
+      },
+      "new_space": {
+        "memorySize": 2097152,
+        "committedMemory": 1763776,
+        "capacity": 1047424,
+        "used": 753904,
+        "available": 293520
+      },
+      "old_space": {
+        "memorySize": 1458176,
+        "committedMemory": 1208752,
+        "capacity": 1207072,
+        "used": 1207024,
+        "available": 48
+      },
+      "code_space": {
+        "memorySize": 360448,
+        "committedMemory": 102880,
+        "capacity": 86496,
+        "used": 86496,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 266240,
+        "committedMemory": 240048,
+        "capacity": 239472,
+        "used": 239472,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 0,
+        "used": 0,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 0,
+        "used": 0,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 1047424,
+        "used": 0,
+        "available": 1047424
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 0.042779,
+    "kernelCpuSeconds": 0.019445,
+    "cpuConsumptionPercent": 6.2224,
+    "maxRss": 30507008,
+    "pageFaults": {
+      "IORequired": 0,
+      "IONotRequired": 1819
+    },
+    "fsActivity": {
+      "reads": 0,
+      "writes": 0
+    }
+  },
+  "uvthreadResourceUsage": {
+    "userCpuSeconds": 0.042029,
+    "kernelCpuSeconds": 0.019104,
+    "cpuConsumptionPercent": 6.1133,
+    "fsActivity": {
+      "reads": 0,
+      "writes": 0
+    }
+  },
+  "libuv": [
+    {
+      "type": "async",
+      "is_active": true,
+      "is_referenced": false,
+      "address": "0x00000000060b0b60"
+    },
+    {
+      "type": "async",
+      "is_active": true,
+      "is_referenced": false,
+      "address": "0x000000000445a560"
+    },
+    {
+      "type": "timer",
+      "is_active": false,
+      "is_referenced": false,
+      "address": "0x000000000614b3b8",
+      "repeat": 0,
+      "firesInMsFromNow": 61623986583526,
+      "expired": false
+    },
+    {
+      "type": "check",
+      "is_active": true,
+      "is_referenced": false,
+      "address": "0x000000000614b450"
+    },
+    {
+      "type": "idle",
+      "is_active": false,
+      "is_referenced": true,
+      "address": "0x000000000614b4c8"
+    },
+    {
+      "type": "async",
+      "is_active": true,
+      "is_referenced": false,
+      "address": "0x000000000614b540"
+    },
+    {
+      "type": "loop",
+      "is_active": false,
+      "address": "0x00000000044617a0"
+    }
+  ],
+  "workers": [
+  ],
+  "environmentVariables": {
+    "SHELL": "/bin/bash",
+    "SESSION_MANAGER": "local/bhagya:@/tmp/.ICE-unix/2942,unix/bhagya:/tmp/.ICE-unix/2942",
+    "QT_ACCESSIBILITY": "1",
+    "COLORTERM": "truecolor",
+    "XDG_CONFIG_DIRS": "/etc/xdg/xdg-ubuntu:/etc/xdg",
+    "XDG_SESSION_PATH": "/org/freedesktop/DisplayManager/Session0",
+    "XDG_MENU_PREFIX": "gnome-",
+    "TERM_PROGRAM_VERSION": "1.60.1",
+    "GNOME_DESKTOP_SESSION_ID": "this-is-deprecated",
+    "LANGUAGE": "en_US",
+    "LC_ADDRESS": "bho_NP",
+    "GNOME_SHELL_SESSION_MODE": "ubuntu",
+    "LC_NAME": "bho_NP",
+    "SSH_AUTH_SOCK": "/run/user/1000/keyring/ssh",
+    "BREAKPAD_DUMP_LOCATION": "/home/bhagya/.config/Code/exthost Crash Reports",
+    "XMODIFIERS": "@im=ibus",
+    "DESKTOP_SESSION": "ubuntu",
+    "LC_MONETARY": "bho_NP",
+    "SSH_AGENT_PID": "2899",
+    "GTK_MODULES": "gail:atk-bridge",
+    "PWD": "/home/bhagya/workspace/advance-node-concept/modules/report",
+    "XDG_SESSION_DESKTOP": "ubuntu",
+    "LOGNAME": "bhagya",
+    "XDG_SESSION_TYPE": "x11",
+    "GPG_AGENT_INFO": "/run/user/1000/gnupg/S.gpg-agent:0:1",
+    "XAUTHORITY": "/home/bhagya/.Xauthority",
+    "VSCODE_GIT_ASKPASS_NODE": "/usr/share/code/code",
+    "XDG_GREETER_DATA_DIR": "/var/lib/lightdm-data/bhagya",
+    "GJS_DEBUG_TOPICS": "JS ERROR;JS LOG",
+    "GDM_LANG": "en_US",
+    "HOME": "/home/bhagya",
+    "IM_CONFIG_PHASE": "1",
+    "LC_PAPER": "bho_NP",
+    "LANG": "en_US.UTF-8",
+    "LS_COLORS": "rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:",
+    "XDG_CURRENT_DESKTOP": "Unity",
+    "GIT_ASKPASS": "/usr/share/code/resources/app/extensions/git/dist/askpass.sh",
+    "XDG_SEAT_PATH": "/org/freedesktop/DisplayManager/Seat0",
+    "INVOCATION_ID": "ce1052406e5d4ad49b6e43d75442eef9",
+    "MANAGERPID": "2751",
+    "CHROME_DESKTOP": "code-url-handler.desktop",
+    "GJS_DEBUG_OUTPUT": "stderr",
+    "NVM_DIR": "/home/bhagya/.nvm",
+    "LESSCLOSE": "/usr/bin/lesspipe %s %s",
+    "XDG_SESSION_CLASS": "user",
+    "TERM": "xterm-256color",
+    "LC_IDENTIFICATION": "bho_NP",
+    "LESSOPEN": "| /usr/bin/lesspipe %s",
+    "LIBVIRT_DEFAULT_URI": "qemu:///system",
+    "USER": "bhagya",
+    "VSCODE_GIT_IPC_HANDLE": "/run/user/1000/vscode-git-aebda811ae.sock",
+    "DISPLAY": ":0",
+    "SHLVL": "1",
+    "NVM_CD_FLAGS": "",
+    "LC_TELEPHONE": "bho_NP",
+    "QT_IM_MODULE": "ibus",
+    "LC_MEASUREMENT": "bho_NP",
+    "XDG_RUNTIME_DIR": "/run/user/1000",
+    "LC_TIME": "bho_NP",
+    "VSCODE_GIT_ASKPASS_MAIN": "/usr/share/code/resources/app/extensions/git/dist/askpass-main.js",
+    "JOURNAL_STREAM": "8:55435",
+    "XDG_DATA_DIRS": "/usr/share/ubuntu:/usr/local/share:/usr/share:/var/lib/snapd/desktop",
+    "GDK_BACKEND": "x11",
+    "PATH": "/home/bhagya/.local/bin:/home/bhagya/.nvm/versions/node/v14.14.0/bin:/home/bhagya/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin",
+    "GDMSESSION": "ubuntu",
+    "ORIGINAL_XDG_CURRENT_DESKTOP": "ubuntu:GNOME",
+    "DBUS_SESSION_BUS_ADDRESS": "unix:path=/run/user/1000/bus",
+    "NVM_BIN": "/home/bhagya/.nvm/versions/node/v14.14.0/bin",
+    "GIO_LAUNCHED_DESKTOP_FILE_PID": "15011",
+    "GIO_LAUNCHED_DESKTOP_FILE": "/usr/share/applications/code.desktop",
+    "LC_NUMERIC": "bho_NP",
+    "TERM_PROGRAM": "vscode",
+    "_": "/home/bhagya/.nvm/versions/node/v14.14.0/bin/node",
+    "OLDPWD": "/home/bhagya/workspace/advance-node-concept/modules"
+  },
+  "userLimits": {
+    "core_file_size_blocks": {
+      "soft": 0,
+      "hard": "unlimited"
+    },
+    "data_seg_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "file_size_blocks": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_locked_memory_bytes": {
+      "soft": 67108864,
+      "hard": 67108864
+    },
+    "max_memory_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "open_files": {
+      "soft": 1048576,
+      "hard": 1048576
+    },
+    "stack_size_bytes": {
+      "soft": 8388608,
+      "hard": "unlimited"
+    },
+    "cpu_time_seconds": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_user_processes": {
+      "soft": 31146,
+      "hard": 31146
+    },
+    "virtual_memory_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    }
+  },
+  "sharedObjects": [
+    "linux-vdso.so.1",
+    "/lib/x86_64-linux-gnu/libdl.so.2",
+    "/lib/x86_64-linux-gnu/libstdc++.so.6",
+    "/lib/x86_64-linux-gnu/libm.so.6",
+    "/lib/x86_64-linux-gnu/libgcc_s.so.1",
+    "/lib/x86_64-linux-gnu/libpthread.so.0",
+    "/lib/x86_64-linux-gnu/libc.so.6",
+    "/lib64/ld-linux-x86-64.so.2"
+  ]
+}
